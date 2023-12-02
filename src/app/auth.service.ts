@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { User, login } from './user';
-import { Observable } from 'rxjs';
+
 import { Router } from '@angular/router';
 import { EmailService } from './email.service';
 
@@ -78,7 +78,7 @@ export class AuthService {
 
             this.router.navigate(['dashboard']);
           } else if (this.roleName === 'user') {
-            this.roleName = 'admin';
+            this.roleName = 'user';
             this.userId = result.id;
             this.email = loginData.email;
             this.userName = result.username;

@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AdminPortalComponent } from './admin-portal/admin-portal.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { LearnersDashboardComponent } from './learners-dashboard/learners-dashboard.component';
-import { authGuard } from './auth.guard';
+// import { authGuard } from './auth.guard';
 
 const routes: Routes = [
   {
@@ -31,27 +31,27 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
-    canActivate: [authGuard],
+    // canActivate: [authGuard],
   },
   {
     path: 'home',
     component: HomeComponent,
-    canActivate: [authGuard],
+    // canActivate: [authGuard],
   },
   {
     path: 'admin',
     component: AdminPortalComponent,
-    canActivate: [authGuard],
+    // canActivate: [authGuard],
   },
   {
     path: 'my-profile',
     component: MyProfileComponent,
-    canActivate: [authGuard],
+    // canActivate: [authGuard],
   },
   {
     path: 'learners',
     component: LearnersDashboardComponent,
-    canActivate: [authGuard],
+    // canActivate: [authGuard],
   },
 ];
 
